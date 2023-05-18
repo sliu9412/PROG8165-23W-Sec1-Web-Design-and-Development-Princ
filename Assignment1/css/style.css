@@ -1,0 +1,371 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: #8ca2b9;
+    font-family: 'Trebuchet MS', Verdana, Arial;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 0 0 1rem 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    font-size: 1.4rem;
+}
+
+b {
+    color: #cf423a;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.divided-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+
+/* header start */
+
+header {
+    color: #fff;
+    border-bottom: 4px solid #ffc303;
+}
+
+header div.header-bg {
+    height: 240px;
+    background-image: url(../images/header-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .self-infomations {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+header .self-name {
+    flex: 3;
+}
+
+header .self-name h1 {
+    padding-bottom: 0.5rem;
+}
+
+header .other-infomations {
+    flex: 2;
+    display: flex;
+    justify-content: end;
+}
+
+header .other-infomations a {
+    color: #fff;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+header ul {
+    list-style-type: square;
+    font-size: 1.2rem;
+}
+
+header ul li {
+    padding-bottom: 5px;
+}
+
+
+/* header end */
+
+
+/* aside start */
+
+aside {
+    background-color: #3b6a96;
+    color: #fff;
+}
+
+aside a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+aside dl {
+    font-size: 1.4rem;
+    position: sticky;
+    top: 0px;
+}
+
+aside dl dt {
+    line-height: 3rem;
+    border-top: 1px solid #fff;
+    padding: 0 2rem;
+    margin-top: 1rem;
+}
+
+aside dl dt:nth-child(1) {
+    border-top: none !important;
+}
+
+aside dl dt:hover {
+    background-color: #2a4a69;
+    color: #fff;
+    cursor: pointer;
+}
+
+aside dl dd {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-left: 1rem;
+    padding: 0 2rem;
+}
+
+aside dl dd::before {
+    content: " - ";
+}
+
+
+/* aside end */
+
+
+/* main start */
+
+main {
+    background-color: #ffeddd;
+    padding: 3rem 2rem;
+}
+
+main h2 {
+    border-left: 10px solid #cf423a;
+    padding-left: 1rem;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+main h3 {
+    display: inline-block;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #3b6a96;
+    padding: 0.4rem 0.5rem;
+    border-radius: 0.2rem;
+    margin: 0 0 0.5rem 0;
+}
+
+main section {
+    margin-bottom: 4rem;
+}
+
+main p {
+    font-size: 1.2rem;
+    margin-bottom: 1.7rem;
+    color: #555;
+}
+
+
+/* About me */
+
+main .About-me .about-profile-text {
+    display: flex;
+    justify-content: left;
+}
+
+main .About-me .about-profile-text div:nth-child(1) {
+    flex: 1;
+    padding-right: 1rem;
+}
+
+main .About-me .about-profile-text div:nth-child(2) {
+    flex: 2;
+}
+
+main .About-me .about-profile-text img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+/* About country */
+
+main .About-country .youtube-video-reference {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+main .About-country iframe {
+    width: 100%;
+    min-height: 450px;
+}
+
+main .About-country .youtube-video-reference a {
+    color: #cf423a;
+}
+
+
+/* About technology */
+
+main .About-technology .technology-items {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    gap: 0.5rem;
+}
+
+main .About-technology .technology-items div {
+    text-align: center;
+}
+
+main .About-technology .technology-items div h3 {
+    margin-top: 0.5rem;
+}
+
+main .About-technology .technology-item {
+    position: relative;
+    text-align: center;
+}
+
+main .About-technology .technology-item::before {
+    display: none;
+    position: absolute;
+    height: 100%;
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+main .About-technology .technology-item:hover::before {
+    display: flex;
+    align-items: center;
+}
+
+main .About-technology .item-seo::before {
+    content: "SEO is the process of improving the rank of search engines' results via optimizing the quantity and user experience of website pages.";
+}
+
+main .About-technology .item-web::before {
+    content: "The main work of Web development is involved in the process of a website's front end and behind end development.";
+}
+
+main .About-technology .item-network::before {
+    content: "Most of the time, the work of Network maintenance includes fault analysis, performance management, maintaining quality of network, etc.";
+}
+
+main .About-technology .technology-item h3 {
+    margin-top: 0.5rem;
+}
+
+
+/* Programming Lang */
+
+main .Programming-Lang .lang-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+main .Programming-Lang .lang-items p {
+    text-align: left;
+    font-size: 1rem;
+    margin: 0;
+}
+
+main .Programming-Lang .lang-items .lang-item {
+    display: flex;
+    gap: 0.5rem;
+}
+
+main .Programming-Lang .lang-items .lang-item div {
+    flex: 1;
+}
+
+
+/* About Skills */
+
+main .About-skills {
+    margin-bottom: 0;
+}
+
+main .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+main .skills .skill-item {
+    width: 100%;
+}
+
+main .About-skills .circles {
+    display: flex;
+    justify-content: left;
+    align-content: 3rem;
+    width: 100%;
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+main .About-skills .circle {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 0.5rem;
+    border: 2px solid #cf423a;
+    border-radius: 3rem;
+}
+
+main .About-skills .full {
+    background-color: #cf423a;
+}
+
+
+/* main end */
+
+
+/* footer start */
+
+footer {
+    background-color: #cf423a;
+    color: #fff;
+    border-top: 4px solid #ffc303;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+
+/* footer end */
