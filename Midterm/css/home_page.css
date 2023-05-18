@@ -1,0 +1,37 @@
+main .products-display {
+    padding: 1rem 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+main .products-display .product-items {
+    padding: 1rem 0;
+    color: #fff;
+}
+
+main .products-display .margin-box {
+    background-color: #6A9941;
+}
+
+main .products-display .name-price {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+main .name-price p::before {
+    content: "$";
+}
+
+main .checkout {
+    text-align: center;
+}
+
+main .checkout a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: 0;
+    background-color: #BC4749;
+    color: #fff;
+}

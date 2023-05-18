@@ -1,0 +1,30 @@
+html {
+    font-size: 16px;
+    background-color: #37123c;
+    color: #dda77b;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+input {
+    border: none;
+}
+
+input[type="submit"] {
+    background-color: #dda77b;
+    color: #37123c;
+}
+
+.container {
+    width: 750px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.guess_result {
+    font-size: 1.5rem;
+}

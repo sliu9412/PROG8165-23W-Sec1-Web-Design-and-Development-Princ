@@ -1,0 +1,19 @@
+#Alert {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 0.9rem;
+    color: #f2e8cf;
+}
+
+@media screen and (max-width:767px) {
+    #Alert {
+        font-size: 0.6rem;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/GlobalWidgets.css">
+    <link rel="stylesheet" href="./css/buy_now.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+    <div id="Alert"></div>
+    <header>
+        <div class="container">
+            <h1>
+                Giftsaholic
+            </h1>
+            <p>Your Online Gift Store</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li class="btn">
+                    <a href="./index.html">HOME</a>
+                </li>
+                <li class="btn">
+                    <a href="./buy_now.html">BUY NOW</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <form action="" id="user-submit-form">
+                <h2>BASIC INFORMATION</h2>
+                <dl>
+                    <!-- name -->
+                    <dt data-name="user-form-name">
+                        <span>NAME</span>
+                        <span class="error-message"></span>
+                    </dt>
+                    <dd>
+                        <input placeholder="Full name" type="text" name="user-form-name" id="user-form-name">
+                    </dd>
+                    <!-- phone -->
+                    <dt data-name="user-form-phone">
+                        <span>PHONE NUMBER</span>
+                        <span class="error-message"></span>
+                    </dt>
+                    <dd>
+                        <input placeholder="e.g. 604-690-4016" type="text" name="user-form-phone" id="user-form-phone">
+                    </dd>
+                    <dd>
+                        <!-- hidden fields -->
+                        <input type="hidden" name="user-form-card-subtotal-price" id="user-form-card-subtotal-price" value="0">
+                        <input type="hidden" name="user-form-province-tax" id="user-form-province-tax" value="0.13">
+                    </dd>
+                </dl>
+                <h2>RECEIPT</h2>
+                <ul class="checklist item-cart"></ul>
+                <button id="user-form-submit-button" class="btn" type="submit">SUBMIT ORDER</button>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <p>© Copyright 2023 all images from pexels.com and freepik.com</p>
+        <p>Designed by Siyu Liu <a href="mailto:sliu9412@conestogac.on.ca">sliu9412@conestogac.on.ca</a></p>
+    </footer>
+    <script src="./js/data.js"></script>
+    <script src="./js/GlobalWidgets.js"></script>
+    <script src="./js/CartGenerator.js"></script>
+    <script src="./js/Validators.js"></script>
+    <script src="./js/buy_now.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siyu Liu's Grocery Store</title>
+    <meta name="description" content="This is an online store of Siyu Liu of Mobile Solution Development, and it's also an individual assignment.">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/GlobalWidgets.css">
+</head>
+
+<body>
+    <div id="Alert"></div>
+    <header>
+        <div class="header-box">
+            <h1>
+                Siyu Liu's
+                <span>Grocery Store</span>
+            </h1>
+            <div class="header-nav">
+                <ul>
+                    <li class="btn">EASY REORDER</li>
+                    <li class="btn">FLYER</li>
+                    <li class="btn">ROLLBACK</li>
+                    <li class="btn">MY ACCOUNT</li>
+                </ul>
+            </div>
+            <div class="header-search-icons">
+                <div class="search">
+                    <input placeholder="Let's find something" type="search">
+                    <button class="btn">SEARCH</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li class="btn">Vegetable & Fruit</li>
+                <li class="btn">Beef & Pork</li>
+                <li class="btn">Snack&Candy</li>
+                <li class="btn">Frozen Food</li>
+                <li class="btn">Deli Meat</li>
+                <li class="btn">Fish&Sea Dood</li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-aside container">
+        <main>
+            <div class="products-display"></div>
+        </main>
+        <aside>
+            <div class="shopping-cart">
+                <form action="" id="user-submit-form">
+                    <h2>BASIC INFORMATION</h2>
+                    <dl class="user-form">
+                        <!-- name -->
+                        <dt data-name="user-form-name">
+                            <span>NAME</span>
+                            <span class="error-message"></span>
+                        </dt>
+                        <dd>
+                            <input placeholder="Full name" type="text" name="user-form-name" id="user-form-name">
+                        </dd>
+                        <!-- phone -->
+                        <dt data-name="user-form-phone">
+                            <span>PHONE NUMBER</span>
+                            <span class="error-message"></span>
+                        </dt>
+                        <dd>
+                            <input placeholder="e.g. 604-690-4016" type="text" name="user-form-phone" id="user-form-phone">
+                        </dd>
+                        <!-- email -->
+                        <dt data-name="user-form-email">
+                            <span>EMAIL</span>
+                            <span class="error-message"></span>
+                        </dt>
+                        <dd>
+                            <input placeholder="e.g. sliu9412@conestogac.on.ca" type="text" name="user-form-email" id="user-form-email">
+                        </dd>
+                        <!-- password -->
+                        <dt data-name="user-form-password">
+                            <span>PASSWORD</span>
+                            <span class="error-message"></span>
+                        </dt>
+                        <dd>
+                            <input type="password" name="user-form-password" id="user-form-password">
+                        </dd>
+                        <!-- confirm password -->
+                        <dt data-name="user-form-confirm-password">
+                            <span>CONFIRM PASSWORD</span>
+                            <span class="error-message"></span>
+                        </dt>
+                        <dd>
+                            <input type="password" name="user-form-confirm-password" id="user-form-confirm-password">
+                        </dd>
+                    </dl>
+                    <h2>LOCATION</h2>
+                    <dl class="user-form">
+                        <!-- post code -->
+                        <dt data-name="user-form-post-code">
+                            <span>POST CODE</span>
+                            <span class="error-message"></span>
+                        </dt>
+                        <dd>
+                            <input placeholder="e.g. N2L3V5" type="text" name="user-form-post-code" id="user-form-post-code">
+                        </dd>
+                        <!-- address -->
+                        <dt data-name="user-form-address">
+                            <span>ADDRESS</span>
+                            <span class="error-message"></span>
+                        </dt>
+                        <dd>
+                            <input placeholder="e.g. University Avenue" type="text" name="user-form-address" id="user-form-address">
+                        </dd>
+                        <!-- city -->
+                        <dt data-name="user-form-city">
+                            <span>CITY</span>
+                            <span class="error-message"></span>
+                        </dt>
+                        <dd>
+                            <input placeholder="e.g. Waterloo" type="text" name="user-form-city" id="user-form-city">
+                        </dd>
+                        <!-- province -->
+                        <dt data-name="user-form-province">
+                            <span>PROVINCE/Territory</span>
+                            <span class="error-message"></span>
+                        </dt>
+                        <dd>
+                            <select name="user-form-province" id="user-form-province">
+                                <option value="">-- Please select a province/territory --</option>
+                                <option value="0.05,Alberta">Alberta</option>
+                                <option value="0.12,British Columbia">British Columbia</option>
+                                <option value="0.12,Manitoba">Manitoba</option>
+                                <option value="0.15,New Brunswick">New Brunswick</option>
+                                <option value="0.15,Newfoundland and Labrador">Newfoundland and Labrador</option>
+                                <option value="0.05,Northwest Territories">Northwest Territories</option>
+                                <option value="0.15,Nova Scotia">Nova Scotia</option>
+                                <option value="0.05,Nunavut">Nunavut</option>
+                                <option value="0.13,Ontario">Ontario</option>
+                                <option value="0.15,Prince Edward Island">Prince Edward Island</option>
+                                <option value="0.15,Quebec">Quebec</option>
+                                <option value="0.11,Saskatchewan">Saskatchewan</option>
+                                <option value="0.05,Yukon">Yukon</option>
+                            </select>
+                        </dd>
+                    </dl>
+                    <h2>PAYMENT</h2>
+                    <dl class="user-form">
+                        <!-- credit card number -->
+                        <dt data-name="user-form-card-number">
+                            <span>CARD NUMBER</span>
+                            <span class="error-message"></span>
+                        </dt>
+                        <dd>
+                            <input placeholder="e.g. 4111-1111-1111-1111" type="text" name="user-form-card-number" id="user-form-card-number">
+                        </dd>
+                        <!-- credit card expiry year -->
+                        <dt data-name="user-form-card-expiry-year">
+                            <span>CARD EXPIRY YEAR</span>
+                            <span class="error-message"></span>
+                        </dt>
+                        <dd>
+                            <input placeholder="e.g. 2025" type="text" name="user-form-card-expiry-year" id="user-form-card-expiry-year">
+                        </dd>
+                        <!-- credit card expiry month -->
+                        <dt data-name="user-form-card-expiry-month">
+                            <span>CARD EXPIRY MONTH</span>
+                            <span class="error-message"></span>
+                        </dt>
+                        <dd>
+                            <input placeholder="e.g. FEB" type="text" name="user-form-card-expiry-month" id="user-form-card-expiry-month">
+                        </dd>
+                        <dd>
+                            <!-- hidden fields -->
+                            <input type="hidden" name="user-form-card-subtotal-price" id="user-form-card-subtotal-price" value="0">
+                            <input type="hidden" name="user-form-province-tax" id="user-form-province-tax" value="0.13">
+                        </dd>
+                    </dl>
+                    <h2>RECEIPT</h2>
+                    <ul class="checklist item-cart"></ul>
+                    <button id="user-form-submit-button" class="btn" type="submit">SUBMIT ORDER</button>
+                </form>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>© Copyright 2023 all images from pexels.com and freepik.com</p>
+        <p>Designed by Siyu Liu <a href="mailto:sliu9412@conestogac.on.ca">sliu9412@conestogac.on.ca</a></p>
+    </footer>
+
+    <script src="./js/GlobalWidgets.js"></script>
+    <script src="./js/Generator.js"></script>
+    <script src="./js/Validators.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

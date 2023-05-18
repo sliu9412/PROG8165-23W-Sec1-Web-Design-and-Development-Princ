@@ -1,0 +1,61 @@
+#Modal {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    z-index: 998;
+}
+
+#Modal .modal-card {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    padding: 0.5rem;
+    min-width: 315px;
+    min-height: 200px;
+    background-color: #5b5f97;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 999;
+}
+
+#Modal .modal-card h2,
+#Modal .modal-card p {
+    text-align: center;
+    width: 100%;
+}
+
+#Modal .modal-card table {
+    width: 100%;
+    font-size: 0.7rem;
+    padding: 0 0 0.5rem 0;
+}
+
+#Modal .modal-card table td {
+    border: 1px solid #b8b8d1;
+    padding: 0.1rem 0.5rem;
+}
+
+#Modal .modal-card table .field {
+    text-align: right;
+}
+
+#Modal .modal-card .calculate-table th {
+    text-align: left;
+}
+
+#Modal .modal-card .calculate-table .checkout-price::before {
+    content: "$";
+}
+
+#Modal .modal-card button {
+    background-color: #3a3d68;
+    margin-bottom: 1rem;
+}

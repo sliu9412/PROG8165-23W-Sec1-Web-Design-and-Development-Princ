@@ -1,0 +1,213 @@
+/* Global Setting Start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f1f1f;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    background-color: #006b5b;
+    color: #fff;
+    border: none;
+}
+
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Global Setting End */
+
+/* Header Start */
+header {
+    background-color: #006b5b;
+    background-image: url(/images/header-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    .header-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        .user-state {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: right;
+        }
+        h1 {
+            margin: 0.5rem 0;
+        }
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+/* Header End */
+
+/* Nav Start */
+nav {
+    background-color:  #002d6b;
+    color: #b6b6b6;
+    padding: 0.5rem 0;
+    ul {
+        display: flex;
+        li {
+            padding: 0 2rem 0 0;
+        }
+        .active {
+            font-weight: bold;
+            color: #fff;
+        }
+    }
+}
+/* Nav End */
+
+/* Main Start */
+main {
+    min-height: 550px;
+    padding: 2rem 0;
+    /* Index Form Start */
+    #index-page-layout {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 2rem;
+        div {
+            display: flex;
+            align-items: center;
+        }
+    }
+    #index-form {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        transform: translateY(-2rem);
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+            margin: 1rem 0;
+            label {
+                font-size: 1.5rem;
+            }
+            input[type="text"],
+            input[type="password"]
+            {
+                height: 2rem;
+                line-height: 2rem;
+                padding: 0 0.5rem;
+                width: 100%;
+            }
+        }
+    }
+    .registration-form {
+        transform: translateY(0) !important;
+        .form-group {
+            margin: 0.5rem 0 !important;
+            label {
+                font-size: 1rem !important;
+            }
+            .error_message {
+                font-size: 0.8rem;
+                color: rgb(195, 4, 4);
+            }
+        }
+    }
+    /* Index Form End */
+    /* Product Page Start */
+    #product-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0.5rem;
+        .product-item {
+            text-align: center;
+            margin-bottom: 2rem;
+            h3 {
+                margin: 0.5rem 0;
+            }
+        }
+        .count-component {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1rem;
+            span {
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+            button {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+    .page-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin: 2rem 0;
+    }
+    /* Product Page End */
+    /* Product Page Start */
+    table {
+        width: 100%;
+        text-align: left;
+        border: 1px solid;
+        padding: 1rem;
+    }
+    /* Product Page End */
+    .page-title {
+        text-align: center;
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+    button[type="submit"] {
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.3rem;
+    }
+    .pagenitor {
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.3rem;
+        background-color: #006b5b;
+        color: #fff;
+        border: none;
+    }
+}
+/* Main End */
+
+/* Footer Start */
+footer {
+    padding: 1rem 0;
+    background-color: #006b5b;
+    text-align: center;
+    color: #fff;
+}
+/* Footer End */
